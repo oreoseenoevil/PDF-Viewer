@@ -116,4 +116,7 @@ sketch
 *.sass.map
 *.scss.map
 
+#webviewer
+public/lib/
+
 # End of https://www.gitignore.io/api/node,sass,react

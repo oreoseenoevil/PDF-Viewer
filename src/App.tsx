@@ -1,19 +1,17 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Header } from 'Components/Header';
+import { Viewer } from 'Components/Viewer';
 
 const App = () => {
+  /**
+   * Add your pdf file in public folder and place it on file folder
+   * assigned value as 'file/sample.pdf'
+   */
+  const value = '';
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Viewer value={value} />
     </div>
   );
 };
